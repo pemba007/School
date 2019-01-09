@@ -1,0 +1,95 @@
+<?xml version='1.0'?> 
+<options>
+	<tab label="General" icon="cog">
+		<group>
+			<fields label="Events Slug">
+				<option id="uevent-slug" type="textfield" width="100" default="event"></option>
+				<description>Change event slug. Remember to save the permalink settings again in Settings > Permalinks</description>
+			</fields>
+			<fields label="Events Categories Slug">
+				<option id="uevent-cat-slug" type="textfield" width="100" default=""></option>
+				<description>Change event categories slug. Remember to save the permalink settings again in Settings > Permalinks</description>
+			</fields>
+			<fields label="Events Tags Slug">
+				<option id="uevent-tag-slug" type="textfield" width="100" default=""></option>
+				<description>Change event tag slug. Remember to save the permalink settings again in Settings > Permalinks</description>
+			</fields>
+			<fields label="Listing Style">
+				<option id="uevent-style" type="select" default="slide" tooltip="" >
+					<select value="classic" text="Classic"/>
+					<select value="grid" text="Grid"/>
+				</option>
+				<description>Select style for Events Listing page</description>
+			</fields>
+			<fields label="Posts Per Page">
+				<option id="uevent-per-page"  type="textfield" width="100" default="">
+				</option>
+				<description></description>
+			</fields>	
+			<fields label="Filter bar">
+				<option id="uevent-filter" type="select" default="slide" tooltip="" >
+					<select value="0" text="Disable"/>
+					<select value="1" text="Enable"/>
+				</option>
+				<description>Enable filter bar</description>
+			</fields>
+			<fields label="Event Listing Order">
+				<option id="uevent-order" type="select" default="slide" tooltip="" >
+					<select value="" text="Default"/>
+					<select value="upcoming" text="Upcoming"/>
+					<select value="startdate" text="Start Date"/>
+					<select value="modified" text="Modified Date"/>
+				</option>
+				<description></description>
+			</fields>
+			<fields label="Event Listing Order Bar">
+				<option id="uevent-filter-order" type="select" default="slide" tooltip="" >
+					<select value="0" text="Disable"/>
+					<select value="1" text="Enable"/>
+				</option>
+				<description></description>
+			</fields>
+		</group>
+	</tab>
+	<tab label="Single Event" icon="cog">
+		<group>
+			<fields label="Sidebar">
+				<option id="u-event-layout" type="select" default="slide" tooltip="" >
+					<select value="right" text="Sidebar Right"/>
+					<select value="left" text="Sidebar left"/>
+					<select value="full" text="Full Width"/>
+				</option>
+				<description>Select default layout for single events pages </description>
+			</fields>
+			<fields label="Header Style">
+				<option id="u-event-layout-header" type="select" default="slide" tooltip="" >
+					<select value="title-only" text="Title Only "/>
+					<select value="feature-image" text="Big Feature Image"/>
+				</option>
+				<description>Select default style for header of single event pages</description>
+			</fields>
+			<fields label="Related Events">
+				<option id="uevent-related" label="Related by" type="select" default="slide" tooltip="" >
+					<select value="cat" text="Categories"/>
+					<select value="tags" text="Tags"/>
+				</option>
+				<description></description>
+				<option id="uevent-rel-number" label="Number of items" type="textfield" width="100" default=""></option>
+			</fields>
+			<fields label="Categories">
+				<option id="single_ev_cat" type="select" default="0" tooltip="" >
+					<select value="0" text="Disable"/>
+					<select value="1" text="Enable"/>
+				</option>
+				<description>Enable Categories info </description>
+			</fields>	
+			<fields label="Tags">
+				<option id="single_ev_tag" type="select" default="0" tooltip="" >
+					<select value="0" text="Disable"/>
+					<select value="1" text="Enable"/>
+				</option>
+				<description>Enable Tags info </description>
+			</fields>	
+		</group>
+	</tab>
+</options>

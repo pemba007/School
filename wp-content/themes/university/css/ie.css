@@ -1,0 +1,15 @@
+header .dropdown > .dropdown-menu {
+	z-index: 2000;
+	backface-visibility:visible;
+}
+.item-thumbnail:hover img{
+	transform: none !important;
+}
+.event-item:hover .event-thumbnail img{
+	transform: none !important;
+}
+
+header .multi-column > .dropdown-menu .menu-column{
+	width:25% !important;
+	padding: 5px !important;
+}

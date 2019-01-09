@@ -1,0 +1,57 @@
+<?xml version='1.0'?> 
+<options>
+	<tab label="General" icon="cog">
+		<group>
+			<fields label="Members Slug">
+				<option id="umember-slug" type="textfield" width="100" default="member"></option>
+				<description>Change member slug. Remember to save the permalink settings again in Settings > Permalinks</description>
+			</fields>
+			<fields label="Members Department Slug">
+				<option id="umember-dep" type="textfield" width="100" default=""></option>
+				<description>Change department slug. Remember to save the permalink settings again in Settings > Permalinks</description>
+			</fields>
+			<fields label="Alphabet filter bar">
+				<option id="u-member-filter" type="select" default="" tooltip="" >
+					<select value="on" text="On"/>
+					<select value="off" text="Off"/>
+				</option>
+				<description>Enable Alphabet filter bar</description>
+			</fields>
+			<fields label="Department filter bar">
+				<option id="u-mb-filter-dep" type="select" default="" tooltip="" >
+					<select value="off" text="Off"/>
+					<select value="on" text="On"/>
+				</option>
+				<description>Enable Department filter bar</description>
+			</fields>
+			<fields label="Member Listing Order">
+				<option id="u-member-order" type="select" default="slide" tooltip="" >
+					<select value="" text="Default"/>
+					<select value="modified" text="Modified Date "/>
+					<select value="title" text="Alphabetically"/>
+				</option>
+				<description></description>
+			</fields>
+		</group>
+	</tab>
+	<tab label="Single Member" icon="cog">
+		<group>
+			<fields label="Sidebar">
+				<option id="u-member-layout" type="select" default="slide" tooltip="" >
+					<select value="right" text="Sidebar Right"/>
+					<select value="left" text="Sidebar left"/>
+					<select value="full" text="Full Width"/>
+				</option>
+				<description>Select layout for single member </description>
+			</fields>
+			<fields label="Seperate Upcoming and Paste Events/Course Table">
+				<option id="u-member-table" type="select" default="off" tooltip="" >
+					<select value="off" text="Off"/>
+					<select value="on" text="On"/>
+				</option>
+				<description></description>
+			</fields>
+		</group>
+	</tab>
+
+</options>

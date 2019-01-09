@@ -1,0 +1,77 @@
+<?xml version='1.0'?> 
+<options>
+	<tab label="General" icon="cog">
+		<group label="" icon="">
+			<fields label="Course Slug">
+				<option id="ucourse-slug"  type="textfield" width="100" default="course">
+				</option>
+				<description>Change course slug. Remember to save the permalink settings again in Settings > Permalinks</description>
+			</fields>
+			<fields label="Course Categories Slug">
+				<option id="ucourse-cat-slug" type="textfield" width="100" default=""></option>
+				<description>Change course categories slug. Remember to save the permalink settings again in Settings > Permalinks</description>
+			</fields>	
+			<fields label="Posts Per Page">
+				<option id="ucourse-per-page"  type="textfield" width="100" default="">
+				</option>
+				<description></description>
+			</fields>
+			<fields label="Filter bar">
+				<option id="ucourse-filter" type="select" default="slide" tooltip="" >
+					<select value="0" text="Disable"/>
+					<select value="1" text="Enable"/>
+				</option>
+				<description>Enable filter bar</description>
+			</fields>
+			<fields label="Course Listing Order">
+				<option id="ucourse-order" type="select" default="" tooltip="" >
+					<select value="" text="Default"/>
+					<select value="upcoming" text="Upcoming"/>
+					<select value="startdate" text="Start Date"/>
+					<select value="modified" text="Modified Date"/>
+				</option>
+				<description></description>
+			</fields>
+			<fields label="Course Listing Order Bar">
+				<option id="ucourse-filter-order" type="select" default="" tooltip="" >
+					<select value="0" text="Disable"/>
+					<select value="1" text="Enable"/>
+				</option>
+				<description></description>
+			</fields>	
+			<fields label="Show Price">
+				<option id="ucourse-showprice" type="select" default="" tooltip="" >
+					<select value="0" text="Hide"/>
+					<select value="1" text="Show"/>
+				</option>
+				<description></description>
+			</fields>			
+		</group>
+	</tab>
+	<tab label="Single Course" icon="cog">
+		<group>
+			<fields label="Sidebar">
+				<option id="u-course-layout" type="select" default="slide" tooltip="" >
+					<select value="right" text="Sidebar Right"/>
+					<select value="left" text="Sidebar left"/>
+					<select value="full" text="Full Width"/>
+				</option>
+				<description>Select default layout for single course pages</description>
+			</fields>
+			<fields label="Related Courses">
+				<option id="ucourse-rel-number" label="Number of items" type="textfield" width="100" default=""></option>
+			</fields>	
+		</group>
+	</tab>
+	<tab label="Course Search" icon="cog">
+		<group>
+			<fields label="Search Settings">
+				<option id="u-course-search" type="select" default="default" tooltip="" >
+					<select value="default" text="Search in both Title and Content of Course"/>
+					<select value="title" text="Search in Course Title only"/>
+				</option>
+				<description>Select how to search the keyword</description>
+			</fields>
+		</group>
+	</tab>
+</options>

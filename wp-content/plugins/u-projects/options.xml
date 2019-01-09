@@ -1,0 +1,49 @@
+<?xml version='1.0'?> 
+<options>
+	<tab label="General" icon="cog">
+		<group>
+			<fields label="Project Slug">
+				<option id="uproject-slug" type="textfield" width="400" default="project"></option>
+				<description>Change project slug. Remember to save the permalink settings again in Settings > Permalinks</description>
+			</fields>
+			<fields label="Project Categories Slug">
+				<option id="uproject-cat-slug" type="textfield" width="100" default=""></option>
+				<description>Change project categories slug. Remember to save the permalink settings again in Settings > Permalinks</description>
+			</fields>
+			<fields label="Default Metadata">
+				<option id="uproject-defmeta" type="textarea" cols="53" rows="3" default=""></option>
+				<description>Define default metadata for all projects, ex: Client, Services...</description>
+			</fields>
+			<fields label="Filter bar">
+				<option id="uproject-filter" type="select" default="slide" tooltip="" >
+					<select value="0" text="Enable"/>
+					<select value="1" text="Disable"/>
+				</option>
+				<description>Enable filter bar</description>
+			</fields>
+		</group>
+	</tab>
+	<tab label="Single Project" icon="cog">
+		<group>
+			<fields label="Sidebar">
+				<option id="u-project-layout" type="select" default="full" tooltip="" >
+					<select value="full" text="Full Width"/>
+					<select value="right" text="Sidebar Right"/>
+					<select value="left" text="Sidebar left"/>
+				</option>
+				<description>Select default layout for single project pages </description>
+			</fields>
+			<fields label="Related Project">
+				<description></description>
+				<option id="uproject-rel-number" label="Number of items" type="textfield" width="100" default="4"></option>
+			</fields>	
+			<fields label="Project navigation">
+				<option id="uproject-next-pre" type="select" default="all" tooltip="" >
+					<select value="all" text="All projects "/>
+					<select value="cat" text="Same category"/>
+				</option>
+				<description>Choose which project to navigate when in a single project page</description>
+			</fields>	
+		</group>
+	</tab>
+</options>
